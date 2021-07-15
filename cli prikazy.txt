@@ -1,0 +1,37 @@
+git bash
+
+pipe | --- ascii kod 124
+
+pwd -W  				--- vypise aktualni adresar
+
+ls -a 					--- vypise vsechny soubory a adresare
+
+cd greenfox 				--- zmena pracovniho adresare na greenfox
+
+touch index.html 			--- vytvori soubor index.html
+
+cd .. 					--- posuneme se o jeden adresar nahoru
+
+cd / 					--- presuneme se do root adresare
+
+echo "zkusebni text" > index.html 	--- prida text do souboru index.html
+
+cat index.html 				--- vypise obsah index.html
+
+cat index.html > about.html 		--- presune obsah index.html do about.html a zaroven ho vytvori
+
+wc -l 					--- vytiskne pocet radek souboru
+wc -w 					--- vytiskne pocet slov souboru
+wc -c 					--- vytiskne pocet byte v souboru
+wc -m 					--- vytiskne pocet znaku souboru
+wc -L 					--- vytiskne nejdelsi radek souboru
+
+cp -r css first-task 			--- zkopiruje adresar a obsah css do adresare first-task
+cp index.html first-task 		--- zkopiruje soubor index.html do adresre first-task
+
+mv index.html first-task 		---presune soubor adresar do jineho adresare
+mv -f index.html first-task		---vynuceni prepsani obsahu
+mv -v index.html first-task		---vypise nazvy prenesenych souboru
+
+
+

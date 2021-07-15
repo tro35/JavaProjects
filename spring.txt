@@ -1,0 +1,72 @@
+http metody
+nejdulezitejsi jsou
+get post put delete
+
+get - nelze touto metodou delat zmeny na serveru
+      pokud se napise Java kod a bude delat zmeny a pouzije se get zmeny se neprovedou
+      pokud se klikne na link v browseru jedna se vzdy o get request
+
+post - post request lze vytvorit pouze v html pouzitim formulare napr login form
+       
+
+HTTP Response
+ Status Code
+ -2xx
+ -3xx
+ -4xx status zacinajici na 4 neco je spatne na strane klienta
+ -5xx chyba na strane serveru
+
+IntelliJ - novy projekt - Spring Initializr
+
+Group - com.nazev spolecnosti
+Artifact - nazev projektu
+Type - Gradle Project
+Web - Spring Web
+Developer Tools - Spring Boot DevTools
+
+Gradle a Maven jsou package managers postahuji si potrebne veci z webu
+
+java .jar obsahuje kompilovany kod v byte strukture, muzeme se podivat dovnitr kdyz soubor prejmenujeme na zip
+     rika se tomu taky java archive
+
+do main psat java kod, do testu psat testy
+do main tridy nepsat dalsi kod, slouzi k nastartovani nasi aplikace
+
+kdyz spustime kompilaci aplikace, aplikace se nastartuje i s web serverem tomcat a ceka na portu 8080
+aplikace bezi na teto adrese http://localhost:8080/ 
+ip pro localhost je vzdy 127.0.0.1 - pokud se zada tato adresa nikdy nejde na internet je to cast prokolu
+vzdy jde na localhost
+
+vytvoreni kontroleru - java - com.firstcompany.myfirstspringapp vytvorit package controllers
+			naming convention kazda trida v kontroller musi koncit slovem controller
+
+u metody v kontroleru se musi rict ze je to endpoint @RequestMapping
+
+testy jsou soucasti aplikace neodstranovat je
+
+devtools automaticky restartuji aplikaci pokud se provede rekompilace
+rekompilace pozna ktere tridy se zmenily a rekompiluje pouze zmeny
+
+resources/templates lze tady vytvorit novy html file
+
+oddeluje se logika aplikace od vzhledu aplikace - java ma na starosti logiku a html vzhled
+MVC - Model View Controller 
+
+build.gradle - sem lze pridat chybejici implementace a po stisku tlacitka vpravo nahore se stahne prislusna dependency
+pri vytvoreni projektu nezapomenout pridat thymeleaf bey toho nebudou fungovat odkazy na html stranky
+
+lze mit vice endpointu jeden primo vypisuje text dalsi odkazuje ma html soubor
+
+pro kazdou metodu urcit ucel pouziti /*get post put delete*/
+getmapping a requestmapping delaji stejnou vec
+
+https://www.youtube.com/watch?v=mHyPgCq4RQo &list=PL33QRGR_RKtKteZpaB1d0Cyw0ETfrSS8L &index=13
+& oddeluji parametry ktere prijima nas program
+
+parametry muzeme oznacit rquired false takze nejsou vyzadovane
+
+@Rest controller pokud se pouzije spring mysli ze kazda metoda je response body a nevrati html stranku
+
+
+
+
