@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="eng">
+<head>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Page</th>
+        <th>Gender</th>
+        <th>Link</th>
+    </tr>
+    <tr th:each="user : ${users}" th:object="${user}">
+        <td th:text="*{name}"></td>
+        <td th:text="*{age}"></td>
+        <td th:text="*{page}"></td>
+        <td th:text="*{gender}"></td>
+        <!-- odkaz jde do metody showUserData-->
+        <td>
+            <a th:href="@{'/' + ${user.name}}">Say hello</a>
+        </td>
+    </tr>
+</table>
+
+<h2>Add new users :</h2>
+<form action="/add" method="post">
+    <label>Name:</label>
+    <input type="text" name="name"><br>
+    <label>Age:</label>
+    <input type="number" name="age"><br>
+    <label>Page:</label>
+    <input type="text" name="page"><br>
+    <label>Gender:</label>
+    <input type="text" name="gender"><br>
+    <button type="submit">Add user</button>
+</form>
+</body>
+</html>

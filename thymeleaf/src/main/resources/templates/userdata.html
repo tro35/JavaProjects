@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="eng">
+<head>
+    <title>Thymeleaf Exercise #</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<div th:if="${isUser}">
+    <h2 th:text="'Hello ' + ${name}"></h2>
+    <h3 th:text="${gender}=='male' ? 'Hi buddy' : 'Iam so pleased to see you.'"></h3>
+</div>
+
+<h2 th:unless="${isUser}">"There is no user with that name"</h2>
+
+<h1>HI USER</h1>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!posle data na backend do bodu login metodou post>
+<!name full name bere data z formulare a posle je na backend>
+<!autofocus automaticky probarvi prvni policko>
+
+<form action="/login" method="POST">
+    <label for="full-name">Full name</label>
+    <input type="text" id="full-name" name="full-name" placeholder="Full name" autofocus>
+
+    <label for="email-address">Email</label>
+    <input type="email" id="email-address">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+
+    <!pattern overi vstupni hodnoty cisla znaky delka3>
+    <label for="licence-plate">Licence plate number</label>
+    <input type="text" pattern="[A-Z]{3}-[0-9]{3}" placeholder="ABC-123">
+
+    <input type="color">
+    <input type="range">
+
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit">
+
+</form>
+</body>
+</html>

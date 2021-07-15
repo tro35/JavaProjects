@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accounts</title>
+</head>
+<body>
+ <h1>Hello Account Owners</h1>
+ <p th:text="${accountOwner} + ' ' + ${#numbers.formatDecimal(accountBalance,3,2,'COMMA')} +
+    ' ' + ${accountType} + ' this display account'"></p>
+</body>
+</html>

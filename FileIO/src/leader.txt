@@ -1,0 +1,4 @@
+Tomas;5
+Jana;4
+Superman;2
+Superman1;2

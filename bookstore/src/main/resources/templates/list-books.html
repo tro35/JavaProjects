@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List Books</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<table class="table table-hover">
+    <thead>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Price</th>
+    <th>Pages</th>
+    </thead>
+    <tr th:each="book:${books}">
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.author}"></td>
+        <td th:text="${book.price}"></td>
+        <td th:text="${book.pages}"></td>
+        <td> <a th:href="@{|/display-specific-book/${book.title}|}"><button type="button" class="btn btn-outline-warning"> Display</button></a></td>
+    </tr>
+    <!-- dalsi varianta kodu
+    <tr th:each="book:${books}" th:object="${book}">
+        <td th:text="*{title}"><td>
+        <td th:text="*{author}"><td>
+        <td th:text="*{price}"><td>
+        <td th:text="*{pages}"><td>
+    </tr> -->
+</table>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+
+table,th,td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+/*zarovna tabulku na stred*/
+table{
+    margin: auto;
+}
+
+td, th{
+    padding: .5em;
+}
+
+tr:nth-child(odd){
+    background-color: bisque;
+}
+
+tr:nth-child(even){
+    background-color: darkred;
+}

@@ -1,0 +1,40 @@
+body{
+  max-width: 750px;
+  margin: auto;
+  background-color: #4bc1db;
+  display: block;
+}
+
+
+#main {
+  padding: 0px 10px;
+  background-color: lightsteelblue;
+  margin-top: 0px;
+}
+blockquote::before {
+  content: '”';
+  }
+
+
+h1{
+  color:yellow;
+  text-shadow: 2px 2px lightyellow;
+  background-image: url("assets/Olomouc-RK.jpg");
+  background-size: 710px 200px;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 710px;
+  font-family: Abril Fatface;
+  margin-top: 0px;
+  margin-left:10px;
+  padding: 5px 10px;
+
+}
+
+h2{
+  color:blue;
+  display: flex;
+  width: 500px;
+  background-color: darkseagreen;
+  margin-left:50px;
+}

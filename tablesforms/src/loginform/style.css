@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.container {
+    margin: 200px auto auto;
+    background-color: lightskyblue;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    justify-content: space-around;
+    list-style: none;
+    font-family: Arial;
+
+}
+
+header {
+    font-size: 30px;
+}
+
+p {
+    text-align: right;
+    font-size: 15px;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: black;
+    color: ivory;
+    border: none;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid green;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input {
+    height: 40px;
+}
+
+label {
+    font-size: 10px;
+}
+
+.container1 {
+    margin: 50px auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-pass {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.container-pass input {
+    border: 0;
+}
+
+.material-icons {
+    background-color: white;
+    margin: 0 10px 0 auto;
+    color: #aaa;
+    cursor: default;
+}
+
+

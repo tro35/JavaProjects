@@ -1,0 +1,50 @@
+.container{
+    margin: auto;
+    background-color: lightskyblue;
+    display:flex;
+    width:800px;
+    height:900px;
+    justify-content:space-around;
+    list-style: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightskyblue;
+
+}
+th{
+    background-color: black;
+    color: ivory;
+}
+
+table,th,td {
+    font-family: Arial;
+    border-style: hidden;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+table{
+    margin: 25px auto;
+}
+th, td{
+    text-align: left;
+    padding: 20px ;
+    width: 320px;
+}
+
+th{
+    border-bottom: 4px solid grey;
+}
+
+td{
+    border: 2px solid gray;
+    color: darkgreen;
+}
+
+tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+tr:nth-child(even){
+    background-color: darkgrey;
+}

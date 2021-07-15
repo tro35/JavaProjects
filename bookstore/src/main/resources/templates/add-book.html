@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+</head>
+<body>
+    <!--<form action="/add-book" th:method="POST" je mozna i tato varianta-->
+    <form th:action="@{/add-book}" th:method="POST" >
+        <label for="title">Provide title</label>
+        <input autofocus required id="title" name="title" placeholder="provide title">
+
+        <label for="author">Provide author</label>
+        <input required id="author" name="author" placeholder="provide author">
+        <button type="submit">SUBMIT</button>
+    </form>
+
+</body>
+</html>

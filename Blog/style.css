@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: burlywood;
+    max-width: 750px;
+    margin: auto;
+}
+
+header {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 70px;
+    background-color: aqua;
+    font-family: "Itim";
+}
+#main {
+    background-color: lightskyblue;
+    height: auto;
+}
+
+.title {
+    padding: 20px 70px;
+    font-family: "Itim";
+}
+
+.art {
+    padding: 20px 70px;
+}
+
+.content {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#btn {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.posts{
+    margin-top: 10px;
+    border: 1px solid black;
+    font-family: "Sofia";
+}
+#text1 {
+    color: lightblue;
+}
+
